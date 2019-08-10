@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css?family=Quicksand&display=swap');
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+body{
+	
+}
+.timeDisplay{
+	position: absolute;
+	color: #fff;
+	font-size: 180px;
+	font-family: 'Quicksand', sans-serif;
+	top: 30%;
+	left: 34%;
+	outline: none;
+	
+}
+.container{
+	position: relative;
+	width: 100vw;
+	height: 100vh;
+	background: url('https://images.unsplash.com/photo-1564516082690-e555f0121218?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1868&q=80') no-repeat center/cover;
+	outline: none;
+}
+ h1{
+	 position: absolute;
+	font-size: 50px;
+	color: #fff;
+	font-family: 'Quicksand', sans-serif;
+	top: 59%;
+	left: 30%;
+	 font-weight: bold;
+	 word-spacing: 7px;
+}
+h2{
+position: absolute;
+	font-size: 40px;
+	color: #fff;
+	font-family: 'Quicksand', sans-serif;
+	top: 64%;
+	left: 31%;
+	margin-top: 50px;
+	 font-weight: 600;
+	word-spacing: 3px;
+}
+#int{
+	position: absolute;
+	top: 78%;
+	left: 30%;
+	width:40vw;
+	height: 7vh;
+	background: transparent;
+	border: 0px transparent;
+	border-bottom: 3px solid #fff;
+	outline: none;
+	font-size: 35px;
+	color: #fff;
+	text-align: center;
+	display: ;
+}
+#ampm{
+	font-size: 30px;
+}
