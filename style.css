@@ -63,3 +63,34 @@ position: absolute;
 #ampm{
 	font-size: 30px;
 }
+.weather{
+	position: absolute;
+	width: 15vw;
+	height: 20vh;
+	right: 100px;
+	top: 20px;
+	display:flex;
+	background: ;
+}
+.weather-scale{
+	position: absolute;
+	font-size: 30px;
+	color: #fff;
+	margin-left: 30px;
+	margin-top: 2px;
+	right: 35px;
+}
+.weather-degree{
+	position: absolute;
+	font-size: 40px;
+	right: 10px;
+	top: 10px;
+	margin-left: 50px;
+}
+.verdict{
+	position: absolute;
+	font-size: 20px;
+	top: 10px;
+	margin-left: 13px;
+	
+}

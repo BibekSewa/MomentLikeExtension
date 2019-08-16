@@ -31,5 +31,36 @@ function greetings(){
 		greet.innerHTML = "Good Evening"
 	}
 }
-greetings();
+
+	
+
+window.addEventListener('load', () => {
+	let long;
+	let lat;
+	let temperatureAmot = document.querySelector(".weather-degree");
+	let verdict = document.querySelector(".verdict");
+	let summaryOfWeather = document.querySelector(".summaryOfWeather");
+
+	if(navigator.geolocation){
+		navigator.geolocation.getCurrentPosition(position => {
+			long = position.coords.longitude;
+			lat = position.coords.latitude;
+			const proxy = "https://cors-anywhere.herokuapp.com/"
+			const api = `${proxy}https://api.darksky.net/forecast/29db519625661493b5a068b7f07abdc1/${lat},${long}`;
 			
+			fetch(api)
+			.then(response => {
+				return response.json();
+			})
+			.then(data => {
+				console.log(data);
+				const {temperature,summary} = data.currently;
+				temperatureAmot.textContent = Math.floor((temperature - 32) * 5 / 9);
+				verdict.textContent =data.timezone;
+				summaryOfWeather.textContent= summary;
+
+			})
+		});
+	}
+});
+greetings();
